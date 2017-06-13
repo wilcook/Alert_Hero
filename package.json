@@ -1,0 +1,19 @@
+{
+  "name": "alert_hero",
+  "version": "0.0.1",
+  "description": "App that helps nurses send quick notifications to desired hospital staff.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/G3oo79/Alert_Hero.git"
+  },
+  "author": "Wil Cook, Nathaniel, Fausto, Sid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/G3oo79/Alert_Hero/issues"
+  },
+  "homepage": "https://github.com/G3oo79/Alert_Hero#readme"
+}
