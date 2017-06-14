@@ -7,7 +7,7 @@ export default class alert_hero extends Component {
   render() {
     return (
       <View>
-         <Component1/>
+         
       </View>
      
     );

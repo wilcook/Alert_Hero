@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
-import { AppRegistry, StyleSheet, Text, View } from 'react-native';
+import { 
+	AppRegistry, 
+	StyleSheet, 
+	Text, 
+	View,
+	Alert,
+} from 'react-native';
 
 /*import Component1 from './app/components/Component1/component1';
 */import Icon from 'react-native-vector-icons/Ionicons';
@@ -7,6 +13,10 @@ import ActionButton from 'react-native-circular-action-menu';
 
 
 export default class alert_hero extends Component {
+	 /*$onPressButton() {
+    Alert.alert('You tapped the button!')
+  };*/
+
   render() {
     return (
       <View style={styles.container}>
@@ -15,15 +25,15 @@ export default class alert_hero extends Component {
         </Text>
 
         <ActionButton buttonColor="rgba(231,76,60,1)">
-          <ActionButton.Item buttonColor='#9b59b6' onPress={() => console.log("notes tapped!")}>
+          <ActionButton.Item buttonColor='#ff0000' onPress={() => {Alert.alert('You tapped the button!')}}>
             <Icon name="ios-create" style={styles.actionButtonIcon} />
           </ActionButton.Item>
 
-          <ActionButton.Item buttonColor='#3498db'  onPress={() => {}}>
+          <ActionButton.Item buttonColor='#ffbf00'  onPress={() => {}}>
             <Icon name="ios-notifications-off" style={styles.actionButtonIcon} />
           </ActionButton.Item>
 
-          <ActionButton.Item buttonColor='#1abc9c'  onPress={() => {}}>
+          <ActionButton.Item buttonColor='#008000'  onPress={() => {}}>
             <Icon name="ios-done-all" style={styles.actionButtonIcon} />
           </ActionButton.Item>
         </ActionButton>
@@ -48,7 +58,6 @@ const styles = StyleSheet.create({
     fontSize: 20,
     height: 22,
     color: 'white',
-    width: 22
   }
 });
 
