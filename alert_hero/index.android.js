@@ -1,16 +1,18 @@
 import React, { Component } from 'react';
 import { 
-	AppRegistry,  
+	AppRegistry, 
+	Text 
 	 
 } from 'react-native';
 
-import Buttons from './app/buttons';
+import Message from './src/components/Message';
 
 export default class alert_hero extends Component {
   render() {
     return (
      
-         <Buttons />
+        
+         <Message />
      
     );
   }
