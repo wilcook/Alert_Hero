@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
-import { AppRegistry, StyleSheet, Text, View } from 'react-native';
+import { 
+	AppRegistry,  
+	 
+} from 'react-native';
 
-import Component1 from './app/components/Component1/component1';
+import Buttons from './app/buttons';
 
 export default class alert_hero extends Component {
   render() {
     return (
-      <View>
-         
-      </View>
+     
+         <Buttons />
      
     );
   }
