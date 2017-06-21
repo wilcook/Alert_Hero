@@ -1,35 +1,3 @@
-import React, {Component} from 'react';
-import {
-	AppRegistry,
-	StyleSheet,
-	TouchableOpacity,
-  Alert,
-	View
-} from 'react-native';
-
-import Style from './Style';
-
-//importing from npm package Action button module.
-class Buttons extends Component {
-    _onPress() {
-      Alert.alert('Hello World!!')
-    }
-	render() {
-		return(
-		    <View style={styles.container}>
-		    	<View style={styles.buttonContainer}>
-		    		<TouchableOpacity style={styles.buttonRed} onPress={this._onPress}></TouchableOpacity>
-
-            <TouchableOpacity style={styles.buttonAmber} onPress={this._onPress}></TouchableOpacity>
-
-            <TouchableOpacity style={styles.buttonGreen} onPress={this._onPress}></TouchableOpacity>
-          </View>
-		    </View>
-		);
-	}
-}
-
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -74,9 +42,17 @@ const styles = StyleSheet.create({
     backgroundColor: '#008000',
     marginTop: 50,
     elevation: 10
-  }
+  },
+  inputText: {
+    alignContent: 'flex-end',
+    height: 40,
+    padding: 10,
+  },
+  messageBox: {
+
+    fontSize: 42,
+
+  },
 });
 
-/*AppRegistry.registerComponent('buttons', () => Buttons);
-*/
-export default Buttons
+export default Style

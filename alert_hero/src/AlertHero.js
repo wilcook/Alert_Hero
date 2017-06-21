@@ -5,8 +5,9 @@ import {
 
 } from 'react-native';
 
-import Message from './src/components/Message';
-import Buttons from './src/components/Buttons'
+import Message from './components/Message';
+import Buttons from './components/Buttons';
+import Style from './components/Style';
 
 export default class alert_hero extends Component {
   render() {

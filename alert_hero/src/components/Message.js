@@ -7,6 +7,8 @@ import {
 	Text
 } from 'react-native';
 
+import Style from './Style';
+
 class Message extends Component {
 	constructor(props) {
 		super(props);
@@ -16,11 +18,11 @@ class Message extends Component {
 	render() {
 		return (
 			<View>
-				<TextInput style={styles.inputText} 
+				<TextInput style={styles.inputText}
 				placeholder= "Type here"
 				onChangeText={(text) => this.setState({text})}
 				/>
-					
+
 				<Text style={styles.messageBox}>
 					{this.state.text.split(' ').map((word) => word)}
 				</Text>
@@ -29,20 +31,5 @@ class Message extends Component {
 		);
 	}
 }
-
-const styles = StyleSheet.create({
-	container: {
-	},
-	inputText: {
-		alignContent: 'flex-end',
-		height: 40,
-		padding: 10,
-	},
-	messageBox: {
-		
-		fontSize: 42,
-
-	}
-});
 
 export default Message
