@@ -11,9 +11,10 @@ export const Schema = [`
 
     type User {
         id: Int!
-        phone: Int!
+        phone: String!
         firstname: String!
         lastname: String!
+        title: String!
         messages: [Message]
         groups: [Group]
     }
