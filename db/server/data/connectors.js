@@ -1,10 +1,10 @@
 import { _ } from 'lodash';
 import Sequelize from 'sequelize';
 
-const db = new Sequelize('alertHero', 'username', 'password' {
+const db = new Sequelize('alertHero', process.env.DBUN, process.env.DBPW {
     dialect: 'mysql',
-    host: // to be added
-    port: // to be added
+    host: process.env.DBHOST, 
+    port: process.env.DBPORT,
 });
 
 const groupModel = db.define('group', {
